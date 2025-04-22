@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pagina {
+    display: none; /* Esconde todas as páginas por padrão */
+    text-align: center;
+}
+
+.pagina.ativa {
+    display: block; /* Exibe a página ativa */
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+.balao {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer; /* Indica que é clicável */
+}
+
+.conectado {
+    margin-left: 50px; /* Para dar um efeito de ligação */
+}
+
+.balao::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.capa-livro {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+.capa-livro h1 {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.mensagem-final {
+    background-color: #a7d9ed;
+    color: #fff;
+}
